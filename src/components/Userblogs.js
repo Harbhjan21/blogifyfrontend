@@ -1,9 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import ReactMarkdown from "react-markdown";
 import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { API } from "../Backend";
-import { Link, Outlet, useNavigate } from "react-router-dom";
 
 const Userblogs = () => {
   const [blogs, setblogs] = useState([]);

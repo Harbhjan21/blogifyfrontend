@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import "./Userprofile.css";
-import { useSelector } from "react-redux";
 import axios from "axios";
-import { API } from "../Backend";
+import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { API } from "../Backend";
+import "./Userprofile.css";
 
 const UserProfile = () => {
   const [userdata, setuserdata] = useState(null);

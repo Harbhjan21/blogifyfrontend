@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { Link, Outlet, useNavigate } from "react-router-dom";
-import { API } from "../Backend";
 import axios from "axios";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
+import { API } from "../Backend";
 
 const Home = () => {
   const [item, setitem] = useState([]);
