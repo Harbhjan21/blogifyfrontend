@@ -1,11 +1,12 @@
 import axios from "axios";
+import { API } from "../Backend";
 
 const AuthService = {
   register: (user) => {
-    return axios.post("http://localhost:5000/auth/signup", user);
+    return axios.post(`${API}/auth/signup`, user);
   },
   login: (user) => {
-    return axios.post("http://localhost:5000/auth/signin", user);
+    return axios.post(`${API}/auth/signin`, user);
   },
 };
 
